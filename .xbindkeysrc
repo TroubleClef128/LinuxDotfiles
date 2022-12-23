@@ -1,0 +1,28 @@
+# Brightness buttons
+"/exec/Brightness.sh down"
+   m:0x0 + c:232
+   XF86MonBrightnessDown
+
+"/exec/Brightness.sh up"
+   m:0x0 + c:233
+   XF86MonBrightnessUp
+
+# Volume controls
+"/exec/Volume.sh mute"
+    m:0x0 + c:121
+    XF86AudioMute
+"/exec/Volume.sh down"
+    m:0x0 + c:122
+    XF86AudioLowerVolume
+"/exec/Volume.sh up"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume
+
+ Other functions...once I decide what to do with them
+"surf google.com"
+    m:0x0 + c:180
+    XF86HomePage
+
+"libreoffice"
+    m:0x0 + c:163
+    XF86Mail
