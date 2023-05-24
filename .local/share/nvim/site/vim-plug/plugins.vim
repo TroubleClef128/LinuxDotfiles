@@ -21,4 +21,8 @@ call plug#begin('~/.local/share/nvim/site/autoload/plugged')
   Plug 'xiyaowong/nvim-transparent'
   " LaTeX support
   Plug 'lervag/vimtex'
+  " Conquerer of Completion
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " yuck filetype support
+  Plug 'elkowar/yuck.vim'  
 call plug#end()

@@ -12,23 +12,23 @@ NUM=`echo "$RAW" | grep -o "[0-9.]\+"`
 
 # Add the icon to the string
 if [ $STATUS == "Charging," ]; then
-       ICON=""	
+       ICON="  "	
 elif [ $STATUS == "not" ]; then
-       ICON=""	
+       ICON="  "	
 elif [ $STATUS == "Full," ]; then
-	ICON=""
+	ICON="   "
 elif [ $((NUM)) -gt 78 ]; then
-	ICON=" "
+	ICON="   "
 elif [ $((NUM)) -gt 57 ]; then
-	ICON=" "
+	ICON="   "
 elif [ $((NUM)) -gt 28 ]; then
-	ICON=" "
+	ICON="   "
 elif [ $((NUM)) -gt 10 ]; then
-	ICON=" "
+	ICON="   "
 else
-	ICON="!"
+	ICON="!   "
 fi
 
 RAW=${RAW%,}
 OUTPUT="$ICON $RAW"
-echo $OUTPUT
+echo "$OUTPUT"

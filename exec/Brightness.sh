@@ -25,7 +25,7 @@ then
 	elif [ $((PREV)) -gt 21 ]
 	then
 		$(brightnessctl set 10%-)
-	elif [ $((PREV)) -gt 10 ]
+	elif [ $((PREV)) -gt 0 ]
 	then
 		$(brightnessctl set 5%-)
 	fi

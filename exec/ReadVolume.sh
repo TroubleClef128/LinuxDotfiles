@@ -9,4 +9,4 @@ else
 	ICON="墳"
 fi
 
-echo "$ICON $VOLUME"
+echo "$ICON  $VOLUME"
