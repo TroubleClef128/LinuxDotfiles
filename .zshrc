@@ -19,6 +19,9 @@ SAVEHIST=1000
 setopt autocd
 unsetopt beep
 bindkey -v
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 # End of lines configured by zsh-newuser-install
 
 autoload -Uz colors && colors
